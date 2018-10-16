@@ -1,0 +1,44 @@
+echo "# Character-generator" >> README.md
+
+import random
+# A tool for writers to find names for characters names by race gender and age (statistically).
+
+# Asian Males
+AsianM = [ "Akifumi","Akihiko", "Akihiro", "Akihisa", "Akihito","Akimasa", "Akimitsu", "Akinari", "Akinobu", "Akinori", "Akio", "Akisada", "Akitake","Akito", "Akitoshi", "Akitsugu"]
+#Asian Females
+AsianF = [ "Sakaë","Sakiya","Sanako","Sarojini","Sato","Saura","Sayo","Seiko","Serika","Setsuko","Sheu","fùh","Shigeko"]
+# Asian Last names
+AsianL = ["Sato","Suzuki","Takahashi","Tanaka","Watanabe","Ito","Yamamoto","Nakamura","Kobayashi",'Kato',"Yoshida","Yamada","Sasaki"]
+
+AfricanM = [     "Deion","Deiondre","Dele", "Denzel", "Dewayne", "Dikembe", "Duante", "Jamar", "Jevonte", "Kadeem", "Kendis","Kentay"]
+  
+AfricanF = [ "Cassietta","Cleotha","Deiondre","Dericia","Gaynelle","Kacondra","Talisha","Taniel", "Tanisha", "Tariana","Temima"]
+
+AfricanL = [ "WILLIAMS","JOHNSON","SMITH","JONES","BROWN","JACKSON","DAVIS","THOMAS","HARRIS","ROBINSON","TAYLOR","WILSON"] 
+
+
+
+
+gender = raw_input("What gender is your character? ")
+race = raw_input("What race is your character? ")
+
+#Asian Male
+
+def AsianMF():
+  if gender == "Male" and race == "Asian":
+   print random.choice(AsianM) + " " + random.choice(AsianL)
+AsianMF()
+
+#Asian Female
+
+def AsianFF():
+  if gender == "Female" and race == "Asian":
+   print random.choice(AsianF) + " " + random.choice(AsianL)
+AsianFF()
+
+#African Male
+
+def AfricanMF():
+  if gender == "Male" and race == "African":
+   print random.choice(AfricanM) + " " + random.choice(AfricanL)
+AfricanMF()
